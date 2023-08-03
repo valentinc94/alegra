@@ -1,6 +1,6 @@
 # Alegra API Client
 
-This is a Python client for the Alegra API. It provides convenient methods for interacting with the Alegra API endpoints.
+This Python script serves as a client for the Alegra API (https://developer.alegra.com/). It allows you to list and interact with various resources provided by the API.
 
 ### Installation
 
@@ -83,6 +83,8 @@ class Taxes(
 ):
     endpoint = "taxes"
 ```
+
+
 
 Make sure to configure the environment variables `ALEGRA_CLIENT_USERNAME`, `ALEGRA_CLIENT_TOKEN_AUTH`, and `ALEGRA_API_BASE_URL` with your Alegra API credentials before running the client.
 
