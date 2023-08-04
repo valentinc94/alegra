@@ -52,7 +52,7 @@ class Updatable(APIResource):
             api_base_url=self.config.api_base_url,
             api_version=self.config.api_version,
         )
-        url = f"{self.endpoint}{resource_id}"
+        url = f"{self.endpoint}/{resource_id}"
         return requestor.request(
             method="put",
             url=url,
@@ -68,7 +68,7 @@ class Retrieve(APIResource):
             api_base_url=self.config.api_base_url,
             api_version=self.config.api_version,
         )
-        url = f"{self.endpoint}{resource_id}"
+        url = f"{self.endpoint}/{resource_id}"
         return requestor.request(
             method="get",
             url=url,
